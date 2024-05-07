@@ -1,10 +1,20 @@
+body {
+    background-color: #064072;
+}
+header, footer {
+    color: white;
+    padding: 10px 0;
+    background-color: #015db9;
+}
 h2 {
     padding: 15px;
+    color: white;
 }
 .card {
     width: calc(100% / 3 - 30px);
     margin: 0 15px 30px;
     cursor: pointer;
+    border: none;
 }
 .card .card-img-top {
     height: 400px;
