@@ -1,0 +1,47 @@
+[
+    {
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "description": "An epic adventure set in a fantasy world full of magic and mystery.",
+      "public_rating": 9.5,
+      "category": "Fantasy",
+      "pages": 1178,
+      "publication_date": "July 29, 1954"
+    },
+    {
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "description": "The story of a young wizard who discovers his destiny in the world of magic.",
+      "public_rating": 9.2,
+      "category": "Fantasy",
+      "pages": 332,
+      "publication_date": "June 26, 1997"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "description": "A dystopian novel that explores the themes of surveillance and government control.",
+      "public_rating": 9.0,
+      "category": "Science Fiction",
+      "pages": 328,
+      "publication_date": "June 8, 1949"
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "description": "A classic of English literature that tells the story of love and prejudice in the nineteenth century.",
+      "public_rating": 9.3,
+      "category": "Novel",
+      "pages": 279,
+      "publication_date": "January 28, 1813"
+    },
+    {
+      "title": "The Little Prince",
+      "author": "Antoine de Saint-Exupéry",
+      "description": "A fairy tale celebrating the innocence and purity of childhood.",
+      "public_rating": 9.4,
+      "category": "Fable",
+      "pages": 96,
+      "publication_date": "April 6, 1943"
+    }
+  ]
