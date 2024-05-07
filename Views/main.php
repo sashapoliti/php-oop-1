@@ -1,29 +1,32 @@
 <?php
-include __DIR__ ."/../Models/Movie.php";
+include __DIR__ . "/../Models/Movie.php";
 $jsonMovies = file_get_contents("./Models/movies_db.json");
 $dataArray = json_decode($jsonMovies, true);
 
 $movies = [];
 foreach ($dataArray as $data) {
-    $movie = new Movie($data['title'], $data['description'], $data['public_rating'], $data['category'], $data['director'], $data['release_date'],);
+    $movie = new Movie($data['title'], $data['description'], $data['imgUrl'], $data['public_rating'], $data['category'], $data['director'], $data['release_date'], );
     $movies[] = $movie;
 }
 ?>
 
 <main class="container">
-    <section>
+    <section class="container">
         <h2>Movies</h2>
-        <ul>
-            <?php foreach ($movies as $movie) : ?>
-                <li>
-                    <h3><?= $movie->title ?></h3>
-                    <p><?= $movie->description ?></p>
-                    <p><?= $movie->public_rating ?></p>
-                    <p><?= $movie->category ?></p>
-                    <p><?= $movie->director ?></p>
-                    <p><?= $movie->release_date ?></p>
-                </li>
-            <?php endforeach; ?>
-        </ul>
+        <div class="card-deck d-flex flex-wrap">
+        <?php foreach ($movies as $movie): ?>
+            <div class="card">
+                <div class="card-img-container">
+                    <img class="card-img-top" src="<?= $movie->imgUrl ?>" alt="Poster <?= $movie->title ?>">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"><?= $movie->title ?></h5>
+                    <p class="card-text">
+                        <?= $movie->description ?>
+                    </p>
+                </div>
+            </div>
+        <?php endforeach; ?>
+        </div>
     </section>
 </main>

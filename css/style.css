@@ -1,0 +1,13 @@
+.card {
+    width: calc(100% / 3 - 30px);
+    margin: 0 15px 30px;
+    cursor: pointer;
+}
+.card .card-img-top {
+    height: 400px;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
