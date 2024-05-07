@@ -1,5 +1,6 @@
 <?php
-class Product {
+class Product
+{
     public $title;
     public $description;
     public $imgUrl;
@@ -7,7 +8,8 @@ class Product {
     public $category;
 
     // Costruttore
-    public function __construct($title, $description, $imgUrl, $public_rating, $category) {
+    public function __construct($title, $description, $imgUrl, $public_rating, $category)
+    {
         $this->title = $title;
         $this->description = $description;
         $this->imgUrl = $imgUrl;
@@ -15,11 +17,17 @@ class Product {
         $this->category = $category;
     }
 
-    public function showAll() {
+    public function getStarRating()
+    {
+        $fullStars = round($this->public_rating / 2);
 
-    }
-    public function showDetail() {
+        $emptyStars = 5 - $fullStars;
 
+        $starsString = str_repeat('<i class="fas fa-star"></i>', $fullStars);
+
+        $starsString .= str_repeat('<i class="far fa-star"></i>', $emptyStars);
+
+        return $starsString;
     }
 
 }

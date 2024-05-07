@@ -13,15 +13,5 @@ class Movie extends Product
         $this->release_date = $release_date;
     }
 
-    public function getStarRating() {
-        $fullStars = round($this->public_rating / 2);
 
-        $emptyStars = 5 - $fullStars;
-
-        $starsString = str_repeat('<i class="fas fa-star"></i>', $fullStars);
-
-        $starsString .= str_repeat('<i class="far fa-star"></i>', $emptyStars);
-
-        return $starsString;
-    }
 }
