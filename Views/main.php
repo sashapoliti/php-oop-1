@@ -19,8 +19,10 @@ foreach ($dataArray as $data) {
                 <div class="card-img-container">
                     <img class="card-img-top" src="<?= $movie->imgUrl ?>" alt="Poster <?= $movie->title ?>">
                 </div>
-                <div class="card-body">
+                <div class="card-body position-relative ">
+                    <span class="vote-stars"><?= $movie->getStarRating() ?></span>
                     <h5 class="card-title"><?= $movie->title ?></h5>
+                    <span class="info"><?= $movie->director ?> | <?= $movie->category ?> | <?= $movie->release_date ?></span>
                     <p class="card-text">
                         <?= $movie->description ?>
                     </p>

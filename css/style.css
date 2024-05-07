@@ -1,3 +1,6 @@
+h2 {
+    padding: 15px;
+}
 .card {
     width: calc(100% / 3 - 30px);
     margin: 0 15px 30px;
@@ -10,4 +13,21 @@ img {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+.card-body span.vote-stars {
+    font-size: 0.8rem;
+    color: gold;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+h5.card-title {
+    margin-bottom: -8px;
+}
+.card-body span.info {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+p.card-text {
+    margin-top: 3px;
 }
